@@ -30,7 +30,7 @@ Dependencies listed in requirements.txt
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/<repository-name>.git
+git clone https://github.com/InshaadMerchant/Library-Management-System.git
 
 Install the required packages:
 
