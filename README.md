@@ -1,10 +1,10 @@
-#Library Management System (LMS)
+# Library Management System (LMS)
 
-#Project Overview
+# Project Overview
 
 This Library Management System (LMS) is developed as a part of CSE 3330 – 004 Project 2 - Part 3 by Group 14, comprising Araohat Kokate, Inshaad Merchant, and Athrva Arora. The project is built to handle the operations of book loans, borrower management, and library branch service optimizations.
 
-#Features
+# Features
 
 View and Modify Book Loans: Display book loan records and update them to reflect late returns.
 
@@ -16,9 +16,9 @@ Dynamic Views Creation: Create views to provide summarized information about boo
 
 Interactive GUI: A front-end interface for easy interaction with the database.
 
-#Getting Started
+# Getting Started
 
-#Prerequisites
+# Prerequisites
 
 SQLite
 
@@ -26,7 +26,7 @@ Python 3.x
 
 Dependencies listed in requirements.txt
 
-#Installation
+# Installation
 
 Clone the repository:
 
@@ -42,11 +42,11 @@ Navigate to the project directory and run the Python script that initiates the G
 
 python main.py
 
-#Usage
+# Usage
 
 The system supports various operations through an interactive GUI and SQL queries. Here are some common tasks:
 
-#Viewing Book Loans
+# Viewing Book Loans
 
 To view the current book loans:
 
@@ -56,7 +56,7 @@ To view the current book loans:
 
 SELECT * FROM BOOK_LOANS;
 
-#Updating Book Loans for Lateness
+# Updating Book Loans for Lateness
 
 To mark a book as returned late:
 
@@ -74,7 +74,7 @@ SET Late = CASE
     
 END;
 
-#Managing Library Branches
+# Managing Library Branches
 
 To manage details of library branches including late fees:
 
@@ -92,7 +92,7 @@ SET LateFee = CASE
     
 END;
 
-#Querying Borrower Details
+# Querying Borrower Details
 
 To fetch details about borrowers and any associated late fees:
 
@@ -104,11 +104,11 @@ LEFT JOIN BORROWER ON vBookLoanInfo.Card_no = BORROWER.Card_no
 
 ORDER BY LateFeeBalance DESC;
 
-Contributing
+# Contributing
 
 Group 14 welcomes contributions. Please open an issue first to discuss what you would like to change. Ensure to update tests as appropriate.
 
-Acknowledgments
+# Acknowledgments
 
 UT Arlington's tradition of academic integrity
 
